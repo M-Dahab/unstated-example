@@ -1,13 +1,16 @@
 import React from 'react';
 import { Provider } from 'unstated';
-import Counter from './Counter';
-import Counter2 from './Counter2';
-import './App.css';
+import CounterBasic from './Containers/CounterBasic';
+import CounterUgly from './Containers/CounterUgly';
+import CounterPretty from './Containers/CounterPretty';
 
+// This is how to use a state container from `unstated` package through your app.
+// See `./Containers/CounterBasic.js` to start.
 const App = () => (
   <Provider>
-    <Counter />
-    <Counter2 />
+    <CounterBasic />
+    <CounterUgly />
+    <CounterPretty />
   </Provider>
 );
 
