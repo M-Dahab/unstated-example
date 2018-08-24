@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
 import { Subscribe } from 'unstated';
-import counterSC from '../StateContainers/counterSC';
+// I'm appending 'SC' to distinguish normal containers from StateContainer.
+import counterSC from '../StateContainers/counter';
 
-// But.., How to use counter state or any of its methods in a life-cycle method?
+// But.., What if I want to use counter state in a life-cycle method?
 // See `./CounterUgly.js` for the answer.
 const CounterBasic = () => (
   <Subscribe to={[counterSC]}>

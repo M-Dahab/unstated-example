@@ -1,6 +1,6 @@
 import React, { Fragment, Component } from 'react';
 import { Subscribe } from 'unstated';
-import counterSC from '../StateContainers/counterSC';
+import counterSC from '../StateContainers/counter';
 
 // If you want to use the state container in any life-cycle method you have
 // to hack your way around that like so (prettier solution in `./CounterPretty.js`):

@@ -1,6 +1,6 @@
 import React, { Fragment, Component } from 'react';
 import connect from 'unstated-connect';
-import counterSC from '../StateContainers/counterSC';
+import counterSC from '../StateContainers/counter';
 
 // A prettier solution to `./CounterUgly.js`.
 class CounterPretty extends Component {
