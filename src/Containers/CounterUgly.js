@@ -1,6 +1,7 @@
 import React, { Fragment, Component } from 'react';
 import { Subscribe } from 'unstated';
 import counterSC from '../StateContainers/counter';
+import Counter from './Counter';
 
 // If you want to use the state container in any life-cycle method you have
 // to hack your way around that like so (prettier solution in `./CounterPretty.js`):
@@ -22,11 +23,12 @@ class CounterUgly extends Component {
     const counter = this.props.containers[0];
 
     return (
-      <Fragment>
-        <h1>{counter.state.count}</h1>
-        <button onClick={counter.inc}>+</button>
-        <button onClick={counter.dec}>-</button>
-      </Fragment>
+      <Counter
+        title={'Ugly Counter (syntax wise!)'}
+        count={counter.state.count}
+        onInc={counter.inc}
+        onDec={counter.dec}
+      />
     );
   };
 }
