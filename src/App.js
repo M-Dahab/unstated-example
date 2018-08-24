@@ -4,7 +4,7 @@ import CounterBasic from './Containers/CounterBasic';
 import CounterUgly from './Containers/CounterUgly';
 import CounterPretty from './Containers/CounterPretty';
 
-// This is how to use a state container from `unstated` package through your app.
+// These counters are using the state container at `./StateContainers/counter.js`.
 // See `./Containers/CounterBasic.js` to start.
 const App = () => (
   <Provider>
