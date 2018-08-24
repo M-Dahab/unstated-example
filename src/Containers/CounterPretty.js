@@ -1,6 +1,7 @@
-import React, { Fragment, Component } from 'react';
+import React, { Component } from 'react';
 import connect from 'unstated-connect';
 import counterSC from '../StateContainers/counter';
+import Counter from './Counter';
 
 // A prettier solution to `./CounterUgly.js`.
 class CounterPretty extends Component {
@@ -13,11 +14,12 @@ class CounterPretty extends Component {
     const [{ state: {count}, inc, dec }] = this.props.containers;
 
     return (
-      <Fragment>
-        <h1>{count}</h1>
-        <button onClick={inc}>+</button>
-        <button onClick={dec}>-</button>
-      </Fragment>
+      <Counter
+        title={'Pretty Counter (same)'}
+        count={count}
+        onInc={inc}
+        onDec={dec}
+      />
     );
   };
 }
