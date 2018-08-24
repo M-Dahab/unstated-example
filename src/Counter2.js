@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Subscribe } from 'unstated';
 import counterSC from './counterSC';
 
-export default () => (
+const Counter2 = () => (
   <Subscribe to={[counterSC]}>
     {({state: { count }, inc, dec}) => (
       <Fragment>
@@ -13,3 +13,5 @@ export default () => (
     )}
   </Subscribe>
 );
+
+export default Counter2;
